@@ -162,6 +162,7 @@ h5 {
   background-size: auto;
   margin: 0;
   padding: 15px 0;
+  overflow: hidden;
 }
 
 .motherShip {
@@ -171,7 +172,7 @@ h5 {
   height: 70px;
   animation: movin 3s infinite;
   animation-direction: alternate;
-  animation-timing-function: ease-in-out
+  animation-timing-function: ease-in-out;
 }
 
 @keyframes movin {
@@ -179,8 +180,59 @@ h5 {
     to {left: 1500px;}
 }
 
+.invaderLine1 {
+  top: 55px;
+  left: 100px;
+  padding: 0;
+  position: relative;
+  width: 1448px;
+  height: 90px;
+  animation: movinLine1 2s infinite;
+  animation-direction: alternate;
+  animation-timing-function: steps(5)
+}
+
+@keyframes movinLine1 {
+    from {left: 120px;}
+    to {left: 320px;}
+}
+
+.invaderLine2 {
+  top: 90px;
+  left: 100px;
+  padding: 0;
+  position: relative;
+  width: 1448px;
+  height: 90px;
+  animation: movinLine2 2s infinite;
+  animation-direction: alternate-reverse;
+  animation-timing-function: steps(5)
+}
+
+@keyframes movinLine2 {
+    from {left: 120px;}
+    to {left: 320px;}
+}
+
+.invaderLine3 {
+  top: 120px;
+  left: 100px;
+  padding: 0;
+  position: relative;
+  width: 1448px;
+  height: 90px;
+  animation: movinLine3 2s infinite;
+  animation-direction: alternate;
+  animation-timing-function: steps(5)
+}
+
+@keyframes movinLine3 {
+    from {left: 120px;}
+    to {left: 320px;}
+}
+
 .spaceShip {
-  top: 640px;
+  top: 375px;
   left: 50px;
   padding: 0;
   position: relative;
@@ -188,7 +240,7 @@ h5 {
   height: 80px;
   animation: movinOwn 3s infinite;
   animation-direction: alternate-reverse;
-  animation-timing-function: ease-in-out
+  animation-timing-function: ease-in-out;
 }
 
 @keyframes movinOwn {
