@@ -1,14 +1,37 @@
+h4,
+h5 {
+  color: rgba(0, 0, 0, 1);
+}
+
+p,
 h3,
-p {
+h4,
+h5 {
   font-family: 'Playfair Display', sans-serif;
   text-align: center;
-  color: #FFF;
+}
+
+h3,
+p {
+  color: rgba(255, 255, 255, 1);
 }
 
 h3 {
   font-size: 32px;
   line-height: 40px;
-  font-weight: 400;
+  font-weight: 200;
+}
+
+h4 {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 300;
+}
+
+h5 {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 200;
 }
 
 p {
@@ -36,4 +59,11 @@ p {
   background-image: url(picz/evilSkull.jpg);
   background-position: fixed;
   background-repeat: no-repeat;
+}
+
+.datetime {
+  width: 100%;
+  height: 100px;
+  background-color: rgba(61, 98, 19, 1);
+  overflow: scroll;
 }
