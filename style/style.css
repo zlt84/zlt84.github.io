@@ -1,30 +1,67 @@
-h4,
-h5 {
-  color: rgba(0, 0, 0, 1);
+/* PARAGRAPH AND HEADING STYLING */
+
+body {
+  margin: 0;
 }
 
 p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+
+p {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 100;
+}
+
+p,
+h2,
 h3,
 h4,
 h5 {
   font-family: 'Playfair Display', sans-serif;
-  text-align: center;
 }
 
-h3,
+h1,
 p {
   color: rgba(255, 255, 255, 1);
 }
 
+h1 {
+  font-family: MedievalSharp;
+  font-size: 40px;
+  line-height: 52px;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 34px;
+  line-height: 44px;
+  font-weight: 300;
+}
+
 h3 {
-  font-size: 32px;
-  line-height: 40px;
+  font-size: 24px;
+  line-height: 30px;
   font-weight: 200;
 }
 
+h2,
+h3 {
+  color: rgb(30, 60, 40);
+}
+
 h4 {
-  font-size: 20px;
-  line-height: 26px;
+  font-size: 30px;
+  line-height: 36px;
   font-weight: 300;
 }
 
@@ -34,36 +71,72 @@ h5 {
   font-weight: 200;
 }
 
-p {
-  font-size: 24px;
-  line-height: 30px;
-  font-weight: 100;
+h4,
+h5 {
+  color: rgba(93, 146, 170, 1);
 }
+
+
+/* DIV STYLING */
 
 .main {
   width: 100%;
   height: 1080px;
-  padding: 20px;
-  background-image: url(picz/mainBackground.jpg);
+  padding: 0px;
+  overflow: hidden;
+  background-image: url("picz/mainBackgroundB.jpg");
+  background-position: top;
+  background-size: cover;
+}
+
+.mainB {
+  width: 100%;
+  height: 1080px;
+  padding: 0px;
+  overflow: hidden;
+  opacity: 0;
+  position: absolute;
+  transition: opacity 3s;
+  transition-delay: 1s;
+  background-image: url("picz/mainBackground_mut.jpg");
+  background-position: top;
+  background-size: cover;
+}
+
+.mainB:hover {
+  opacity: 1;
 }
 
 .header {
-  width: 30%;
-  max-width: 400px;
+  width: 100%;
+  height: auto;
   min-width: 200px;
-  max-height: 440px;
-  margin: 0 auto;
-  border: 1px solid rgba(255, 255, 255, 1);
-  border-radius: 12px;
-  padding: 5px;
-  background-image: url(picz/evilSkull.jpg);
-  background-position: fixed;
+  max-height: 160px;
+  margin: 20px auto;
+  border-top: 1px solid rgba(255, 255, 255, 1);
+  border-bottom: 1px solid rgba(255, 255, 255, 1);
+  border-left: 0px;
+  border-right: 0px;
+  padding: 10px;
+  background-image: url("picz/evilSkull75.png");
+  background-position: fixed center;
   background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  z-index: 1;
 }
 
 .datetime {
   width: 100%;
-  height: 100px;
-  background-color: rgba(61, 98, 19, 1);
-  overflow: scroll;
+  height: auto;
+  background-color: rgba(2, 25, 13, 1);
+  padding: 15px 0px;
+}
+
+.dateProcess {
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  padding: 15px 0px;
 }
