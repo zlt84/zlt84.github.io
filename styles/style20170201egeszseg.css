@@ -1,0 +1,231 @@
+/* keret mindenre
+* {
+    border: 1px solid black;
+}
+*/
+
+body {
+    color: #FFF;
+    background-color: #FFF;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-family: 'Quicksand', sans-serif;
+    color: #FFF;
+    font-size: 55px;
+    font-weight: 400;
+    line-height: 60px;
+    margin: 0;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    color: #FFF;
+    margin: 0;
+    font-size: 28px;
+    font-weight: 100;
+    text-align: center;
+}
+
+.header {
+    background-image: url("../images/20170201/bg_green.jpg");
+    background-position: center center;
+    background-size: cover;
+    height: 1080px;
+    width: 100%;
+    position: relative;
+}
+
+#header-text,
+#idezetbox {
+    position: relative;
+}
+
+#header-text {
+    margin: 0 auto;
+    text-align: center;
+    top: 25%;
+    width: 75%;
+    max-width: 600px;
+}
+
+#idezetbox {
+    margin: 60px auto auto auto;
+    top: 25%;
+    width: 75%;
+    max-width: 800px;
+    opacity: 0;
+    transition: opacity 3s;
+    transition-timing-function: ease-out;
+}
+
+
+.leiras {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 100;
+    max-width: 650px;
+}
+
+.idezet,
+.szerzo {
+    font-family: 'Amatic SC';
+    color: #FFF;
+    margin: 0;
+    font-weight: 100;
+    font-style: normal;
+    text-shadow: 1.5px 1.5px 2.5px rgba(0, 0, 0, .65);
+}
+
+.idezet {
+    font-size: 34px;
+    line-height: 42px;
+    text-align: center;
+}
+
+.szerzo {
+    font-size: 24px;
+    line-height: 28px;
+    text-align: right;
+}
+
+.main,
+.tenyezok,
+.forras {
+    width: 100%;
+    padding: 20px 10px 20px 10px;
+    margin: auto;
+    background-repeat: no-repeat;
+}
+
+.main,
+.tenyezok {
+    background-position: center center;
+}
+
+.main {
+    background: url("../images/20170201/hatsopattern2.jpg");
+}
+
+.tenyezok {
+    background: url("../images/20170201/hatsopattern3.jpg");
+}
+
+.forras {
+    background: url("../images/20170201/hatsopattern4.jpg") fixed center;
+}
+
+.value {
+    margin: auto;
+    width: 50%;
+}
+
+.dimensions {
+    border: 1px solid rgba(255, 255, 255, 1);
+    color: #FFF;
+    padding: 20px 30px;
+    margin: 10px 0px;
+    text-align: center;
+    transition: border 1s, background-color 1s;
+}
+
+.dimensions:hover {
+    border: 1px solid rgb(51, 110, 13);
+    background-color: rgba(51, 110, 13, .3);
+}
+
+.tenyezokTenyezok {
+    border: 1px solid rgba(255, 255, 255, 1);
+    color: #FFF;
+    padding: 20px 30px;
+    margin: 0px 0px;
+    text-align: center;
+    transition: border 1s, background-color 1s;
+    opacity: 1;
+}
+
+.tenyezokTenyezok:hover {
+    border: 1px solid rgb(51, 110, 13);
+    background-color: rgba(51, 110, 13, .3);
+}
+
+#idezetbox:hover {
+    opacity: 1;
+}
+
+.dimensions h2 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 24px;
+}
+
+.kozcimek {
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    padding: 20px 0px;
+    color: #3D6213;
+    font-size: 32px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+/* ---LOWER SECTION--- */
+
+.alsoKep {
+    background-image: url("../images/20170201/green_nature2.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 20px;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    opacity: 0;
+    position: relative;
+    transition: opacity 3s, height 3s;
+    transition-timing-function: ease-out;
+}
+
+.alsoKep:hover {
+    opacity: 1;
+    height: 1080px;
+}
+
+#alsoIdezetbox {
+    width: 80%;
+    max-width: 1000px;
+    opacity: 0;
+    margin: 20px auto;
+    transition: opacity 3s;
+    transition-timing-function: ease-out;
+}
+
+#alsoIdezetbox:hover {
+    opacity: 1;
+}
+
+.alsoIdezet,
+.alsoSzerzo {
+    font-family: 'Amatic SC';
+    color: #FFF;
+    margin: 0;
+    font-weight: 100;
+    font-style: normal;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, .9);
+}
+
+.alsoIdezet {
+    font-size: 56px;
+    line-height: 76px;
+    text-align: center;
+}
+
+.alsoSzerzo {
+    font-size: 32px;
+    line-height: 36px;
+    text-align: right;
+}

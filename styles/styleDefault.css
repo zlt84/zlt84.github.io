@@ -1,0 +1,222 @@
+/* PARAGRAPH AND HEADING STYLING */
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Playfair Display', sans-serif;
+}
+
+h1 {
+  font-family: MedievalSharp, sans-serif;
+  font-size: 40px;
+  line-height: 52px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+
+}
+
+h2 {
+  font-size: 34px;
+  line-height: 44px;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 200;
+}
+
+h2,
+h3 {
+  color: rgb(30, 60, 40);
+}
+
+h4 {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 300;
+}
+
+h5 {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 200;
+}
+
+h4,
+h5 {
+  color: rgba(93, 146, 170, 1);
+}
+
+
+/* HEADER AND BACKGROUND */
+
+.header {
+  width: 100%;
+  height: auto;
+  min-width: 200px;
+  max-height: 160px;
+  margin: 20px auto;
+  border-top: 1px solid rgba(255, 255, 255, 1);
+  border-bottom: 1px solid rgba(255, 255, 255, 1);
+  border-left: 0;
+  border-right: 0;
+  padding: 10px;
+  background-image: url("../images/main/evilSkull75.png");
+  background-position: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  z-index: 999;
+}
+
+.main {
+  width: 100%;
+  height: 1080px;
+  padding: 0;
+  overflow: hidden;
+  position: absolute;
+  background-image: url("../images/main/mainBackgroundB.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.mainB {
+  width: 100%;
+  height: 1080px;
+  padding: 0;
+  overflow: hidden;
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  transition: opacity 2s;
+  transition-delay: 1s;
+  background-image: url("../images/main/mainBackground_mut.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.mainB:hover {
+  opacity: 1;
+}
+
+
+/* MAIN MENU */
+
+.mainMenu {
+  width: auto;
+  height: auto;
+  position: relative;
+  padding: 0;
+  margin: 200px 100px;
+  opacity: .8;
+  transition: opacity 1s;
+}
+
+.mainMenu:hover {
+  opacity: 1;
+  }
+
+.buttonAlap,
+.buttonAlapInactive {
+  background-image: url("../images/main/button.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 180px;
+  height: 47px;
+  padding: 15px 10px 5px 10px;
+  margin: auto;
+  position: relative;
+  transition: color 1.5s, text-shadow 1.5s, border 1.5s, opacity 1.5s, transform 1.5s;
+  color: rgba(55, 55, 0, 1);
+  border: .5px solid rgba(230, 230, 0, 0);
+  display: inline-block;
+  margin: 10px;
+}
+
+.buttonAlap {
+  opacity: .6;
+}
+
+.buttonAlapInactive {
+  opacity: .3;
+}
+
+.buttonDate,
+.buttonText {
+  font-family: MedievalSharp, sans-serif;
+  text-align: center;
+  font-weight: 100;
+  margin: auto;
+}
+
+.buttonDate {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.buttonText {
+  font-size: 13px;
+  line-height: 16px;
+}
+
+/*
+.leckeLink {
+  text-decoration: none;
+}
+*/
+
+.buttonAlap:hover,
+.buttonAlapInactive:hover {
+  color: rgba(55, 55, 0, .75);
+  border: .5px solid rgba(255, 255, 255, .5);
+  text-shadow: rgba(0, 0, 0, 1);
+}
+
+.buttonAlap:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.buttonAlapInactive:hover {
+  opacity: .7;
+}
+
+.leckeLink:link {
+  color: rgba(255, 255, 255, 1);
+  text-shadow: rgba(0, 0, 0, 1);
+  opacity: 1;
+  text-decoration: none;
+}
+
+.leckeLink:visited {
+  color: rgba(150, 150, 150, .85);
+  text-shadow: rgba(0, 0, 0, 1);
+  opacity: 1;
+  text-decoration: none;
+
+}
+
+.leckeLink:active {
+  color: rgba(255, 155, 0, 1);
+  text-shadow: rgba(0, 0, 0, 1);
+  opacity: 1;
+  text-decoration: none;
+}
