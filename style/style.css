@@ -165,14 +165,29 @@ h5 {
   overflow: hidden;
 }
 
+.motherShip,
+.spaceShip  {
+  padding: 0;
+  position: relative;
+  width: 145px;
+  height: 80px;
+  animation: movin 3s infinite;
+  animation-timing-function: ease-in-out;
+}
+
 .motherShip {
   top: 60px;
-  position: relative;
-  width: 154px;
-  height: 70px;
-  animation: movin 3s infinite;
   animation-direction: alternate;
-  animation-timing-function: ease-in-out;
+}
+
+.spaceShip {
+  top: 375px;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes movinOwn {
+    from {left: 150px;}
+    to {left: 1550px;}
 }
 
 @keyframes movin {
@@ -180,70 +195,37 @@ h5 {
     to {left: 1500px;}
 }
 
-.invaderLine1 {
-  top: 55px;
+.invaderLine1,
+.invaderLine2,
+.invaderLine3 {
   left: 100px;
   padding: 0;
   position: relative;
   width: 1448px;
   height: 90px;
-  animation: movinLine1 2s infinite;
-  animation-direction: alternate;
-  animation-timing-function: steps(5)
+  animation: movinLine 2s infinite;
+  animation-timing-function: steps(5);
 }
 
-@keyframes movinLine1 {
-    from {left: 120px;}
-    to {left: 320px;}
+.invaderLine1,
+.invaderLine3 {
+  animation-direction: alternate;
+}
+
+.invaderLine1 {
+  top: 75px;
 }
 
 .invaderLine2 {
-  top: 90px;
-  left: 100px;
-  padding: 0;
-  position: relative;
-  width: 1448px;
-  height: 90px;
-  animation: movinLine2 2s infinite;
+  top: 110px;
   animation-direction: alternate-reverse;
-  animation-timing-function: steps(5)
-}
-
-@keyframes movinLine2 {
-    from {left: 120px;}
-    to {left: 320px;}
 }
 
 .invaderLine3 {
-  top: 120px;
-  left: 100px;
-  padding: 0;
-  position: relative;
-  width: 1448px;
-  height: 90px;
-  animation: movinLine3 2s infinite;
-  animation-direction: alternate;
-  animation-timing-function: steps(5)
+  top: 140px;
 }
 
-@keyframes movinLine3 {
-    from {left: 120px;}
-    to {left: 320px;}
-}
-
-.spaceShip {
-  top: 375px;
-  left: 50px;
-  padding: 0;
-  position: relative;
-  width: 142px;
-  height: 80px;
-  animation: movinOwn 3s infinite;
-  animation-direction: alternate-reverse;
-  animation-timing-function: ease-in-out;
-}
-
-@keyframes movinOwn {
-    from {left: 150px;}
-    to {left: 1550px;}
+@keyframes movinLine {
+  from {left: 120px;}
+  to {left: 320px;}
 }
