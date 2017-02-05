@@ -84,7 +84,7 @@ h5 {
   height: 1080px;
   padding: 0px;
   overflow: hidden;
-  background-image: url("picz/mainBackgroundB.jpg");
+  background-image: url("../images/main/mainBackgroundB.jpg");
   background-position: top;
   background-size: cover;
 }
@@ -98,7 +98,7 @@ h5 {
   position: absolute;
   transition: opacity 3s;
   transition-delay: 1s;
-  background-image: url("picz/mainBackground_mut.jpg");
+  background-image: url("../images/main/mainBackground_mut.jpg");
   background-position: top;
   background-size: cover;
 }
@@ -118,7 +118,7 @@ h5 {
   border-left: 0;
   border-right: 0;
   padding: 10px;
-  background-image: url("picz/evilSkull75.png");
+  background-image: url("../images/main/evilSkull75.png");
   background-position: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -156,7 +156,7 @@ h5 {
 .lessonBoxAnimation {
   width: 100%;
   height: 820px;
-  background-image: url(picz/spaceinvaders/spaceinvadersBg.jpg);
+  background-image: url("../images/20170204/spaceinvadersBg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto;
@@ -252,7 +252,7 @@ h5 {
   width: 100%;
   height: 1000px;
   opacity: 0;
-  background-image: url(picz/db/dbTransformBgDif.jpg);
+  background-image: url("../images/20170205/dbTransformBgDif.jpg");
   background-position: left;
   transition: animation 2s, opacity 2s;
 }
@@ -262,7 +262,7 @@ h5 {
   width: 100%;
   height: 1000px;
   opacity: 1;
-  background-image: url(picz/db/dbTransformBg.jpg);
+  background-image: url("../images/20170205/dbTransformBg.jpg");
   background-position: left;
   animation: earthquakeLow .075s infinite;
   animation-delay: 5s;
