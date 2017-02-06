@@ -41,3 +41,42 @@ console.log('Morning alarm is set to: ', morningAlarm);
 
 var favoriteAnimal = 'cat';
 console.log('My favorite animal: ' + favoriteAnimal);
+
+
+var needCoffee = true;
+if (needCoffee) {
+  console.log('Finding coffee');
+} else {
+  console.log('Keep on keeping on!');
+}
+
+
+var harryPotterFan = false;
+if (harryPotterFan) {
+  console.log('I lead a muggle\'s life.');
+} else {
+  console.log('Mischief managed.');
+}
+
+
+var hungerLevel = 10;
+if (hungerLevel > 7) {
+  console.log('Time to eat!');
+} else {
+  console.log('Let\'s eat later.');
+}
+
+var hungerLevelB = 7;
+if (hungerLevelB >= 7) {
+  console.log('Time to eat!');
+} else {
+  console.log('Let\'s eat later.');
+}
+
+
+var moonPhase = 'full';
+if (moonPhase = 'full') {
+  console.log('Howwwwlll!!')
+} else {
+  console.log('I swear I am not a werewolf...')
+}
