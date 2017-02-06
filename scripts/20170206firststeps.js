@@ -7,7 +7,8 @@ console.log("Name: " + myString);
 console.log("Lucky Number: " + myNumber);
 console.log("Good joke? " + myBoolean);
 
-console.log(Math.floor(Math.random() * 100));
+console.log(Math.random() * 100) // random szám 0-100 között, tizedesre pontosan
+console.log(Math.floor(Math.random() * 100)); // random szám 0-100 között, kerekítve
 
 /* commenting
 as long as you want
@@ -73,10 +74,49 @@ if (hungerLevelB >= 7) {
   console.log('Let\'s eat later.');
 }
 
+/*
+
+var foggyNight = false
 
 var moonPhase = 'full';
-if (moonPhase = 'full') {
-  console.log('Howwwwlll!!')
+if (moonPhase === 'full' && foggyNight) {
+  console.log('Howwwwlll!!');
+} else if (moonPhase === 'mostly full') {
+  console.log('Arms and legs are getting hairer');
+} else if (moonPhase === 'mostly new') {
+  console.log('Back on two feet');
 } else {
-  console.log('I swear I am not a werewolf...')
+  console.log('Invalid moon phase');
+
+
+var foggyNight = false
+
+var moonPhase = 'full';
+if (moonPhase === 'full' || foggyNight) {
+  console.log('Howwwwlll!!');
+} else if (moonPhase === 'mostly full') {
+  console.log('Arms and legs are getting hairer');
+} else if (moonPhase === 'mostly new') {
+  console.log('Back on two feet');
+} else {
+  console.log('Invalid moon phase');
+}
+
+*/
+
+var moonPhase = 'full';
+
+switch (moonPhase) {
+  case 'full':
+    console.log('Howwwwlll!!');
+    break;
+  case 'mostly full':
+    console.log('Arms and legs are getting hairer');
+    break;
+  case 'mostly new':
+    console.log('Back on two feet');
+    break;
+  default:
+    console.log('Invalid moon phase');
+    break;
 }
