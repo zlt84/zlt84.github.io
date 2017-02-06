@@ -87,30 +87,30 @@ h5 {
   z-index: 999;
 }
 
-.main {
-  width: 100%;
-  height: 1080px;
-  padding: 0;
-  overflow: hidden;
-  position: absolute;
-  background-image: url("../images/main/mainBackgroundB.jpg");
-  background-position: center;
-  background-size: cover;
-}
-
+.main,
 .mainB {
   width: 100%;
   height: 1080px;
   padding: 0;
   overflow: hidden;
+  background-position: center center;
+  background-size: cover;
+}
+
+.main {
+
+  position: absolute;
+  background-image: url("../images/main/mainBackgroundB.jpg");
+}
+
+.mainB {
   opacity: 0;
   position: relative;
   top: 0px;
   transition: opacity 2s;
   transition-delay: 1s;
   background-image: url("../images/main/mainBackground_mut.jpg");
-  background-position: center;
-  background-size: cover;
+
 }
 
 .mainB:hover {
