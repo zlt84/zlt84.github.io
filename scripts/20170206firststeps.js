@@ -7,8 +7,8 @@ console.log("Name: " + myString);
 console.log("Lucky Number: " + myNumber);
 console.log("Good joke? " + myBoolean);
 
-console.log(Math.random() * 100) // random szám 0-100 között, tizedesre pontosan
-console.log(Math.floor(Math.random() * 100)); // random szám 0-100 között, kerekítve
+console.log(Math.random() * 100)                  // random szám 0-100 között, tizedesre pontosan
+console.log(Math.floor(Math.random() * 100));     // random szám 0-100 között, kerekítve
 
 /* commenting
 as long as you want
