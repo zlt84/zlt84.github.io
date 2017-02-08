@@ -1,70 +1,117 @@
 /*
 * {
-  border: 1px solid white;
+  border: 1px solid red;
 }
 */
 
 p,
+ul,
 body {
   margin: 0;
 }
 
-.main {
+li {
+  margin: 0 0 0 15px;
+}
+.main,
+.menu,
+.bioText,
+.fulBio,
+.fulCar {
   width: auto;
   height: auto;
+}
+
+.fulCar,
+.fulBio,
+.bioText,
+.titles,
+.kozcim,
+.car {
+  font-family: Ubuntu;
+  color: white;
+}
+
+.main {
   background-image: url(../images/20170208/patternAlap.jpg);
-  background-repeat:repeat;
+  background-repeat: repeat;
   background-size: auto;
   background-attachment: fixed;
   background-position: center;
   min-width: 400px;
   max-width: 1920px;
-  min-height: 1080px;
   position: relative;
-  padding: 50px 0 0 0;
+  padding: 50px 0;
 }
 
 .menu {
-  width: auto;
-  height: auto;
   position: absolute;
 }
 
 .bio {
-  background: linear-gradient(90deg, rgba(255, 150, 25, .2), rgba(255, 100, 25, .2));
+  background: linear-gradient(90deg, rgba(255, 150, 25, .5), rgba(255, 100, 25, .5));
   position: relative;
   padding: 10px 50px 10px 10px;
-  width: 30%;
+  width: 400px;
   height: auto;
-  min-width: 300px;
+  max-height: 1000px;
   margin: 0 0 50px 0;
-  border-radius: 12px;
+  border-radius: 0 15px 15px 0;
   display: block;
+  left: -415px;
+  transition: background 1s linear, left 1s linear;
+  z-index: 1;
 }
 
-.ful {
-  width: auto;
-  height: auto;
-  font-family: Ubuntu;
+.bio:hover {
+  left: 0px;
+  background: linear-gradient(90deg, rgba(255, 150, 25, .65), rgba(255, 100, 25, .65));
+}
+
+.fulBio,
+.fulCar {
   font-weight: 800;
   font-size: 24px;
   line-height: normal;
-  color: white;
   padding: 0;
   transform: rotate(90deg);
   margin: auto;
   position: absolute;
+}
+
+.fulBio {
   top: 65px;
   right: -40px;
 }
 
+.fulCar {
+  top: 113px;
+  right: -86px;
+}
+
 .bioText {
-  width: auto;
-  height: auto;
-  font-family: Ubuntu;
   font-size: 16px;
   line-height: 22px;
-  color: white;
+  font-weight: 400;
+  margin: auto;
+  position: relative;
+}
+
+.titles {
+  font-size: 12px;
+  line-height: 15px;
+  padding: 0;
+  list-style: circle inside;
+}
+
+.kozcim {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.car {
+  width: auto;
+  height: auto;
   font-weight: 400;
   margin: auto;
   position: relative;
