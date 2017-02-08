@@ -73,3 +73,32 @@ console.log('Mail box: ' + mailBoxNumber + ', Laundry' + laundryRoom);
 console.log(myApartment());
 
 console.log('Laundry: ' + laundryRoom + ', Mail: ' + mailRoom);
+
+
+// Arrays
+
+var bucketList = ['item 0', 'item 1', 'item 2'];
+
+bucketList.push('item 3', 'item 4');
+
+bucketList.pop();
+
+var listItem = bucketList[3];
+
+
+console.log(bucketList.length);
+console.log(bucketList);
+console.log(listItem);
+
+
+// Fun fact: You can also access each individual character in a string the same way you do with arrays. For instance, you can write:
+var hello = 'Hello World';
+console.log(hello[6]);
+// Output: W
+// 'W' will be the output since it's the character in the 6th position. This works because JavaScript internally stores strings in a similar way that it stores arrays.
+
+
+// Fun fact: .length is also a property for strings.
+//For instance, you can write 'Hello World'.length, and it will output 11 (the number of characters in "Hello World").
+console.log(hello.length);
+// Output: 11
