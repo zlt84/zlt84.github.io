@@ -1,6 +1,6 @@
-var vacationSpots = ['Thailand', 'Sweden', 'Netherlands'];
+var vacationSpots = ['Thailand', 'Sweden', 'Japan'];
 
-for (var i = vacationSpots.length -1; i >= 0; i--) {
+for (var i = vacationSpots.length - 1; i >= 0; i--) {
   console.log('I would love to visit ' + vacationSpots[i]);
 }
 
@@ -9,12 +9,10 @@ console.log(vacationSpots[1]);
 console.log(vacationSpots[2]);
 
 
-var vacationSpots = ['Thailand', 'Sweden', 'Netherlands'];
+var vacationSpots = ['Thailand', 'Sweden', 'Japan'];
 
 for (var i = 0; i < vacationSpots.length; i++) {
-  console.log(vacationSpots[i]);
-
-console.log('I would love to visit ' + vacationSpots[i]);
+  console.log('I would love to visit ' + vacationSpots[i]);
 }
 
 /*
@@ -44,12 +42,10 @@ This makes it possible to write animals[0], animals[1], animals[2] programmatica
 */
 
 
-var vacationSpots = ['Thailand', 'Sweden', 'Netherlands'];
+var vacationSpots = ['Thailand', 'Sweden', 'Japan'];
 
-for (var i = vacationSpots.length; i >= 0; i--) {
-  console.log(vacationSpots[i]);
-
-console.log('I would love to visit ' + vacationSpots[i]);
+for (var i = vacationSpots.length - 1; i >= 0; i--) {
+  console.log('I would love to visit ' + vacationSpots[i]);
 }
 
 /*
@@ -62,4 +58,65 @@ To do this, we'll need to edit the code between the for loop's parentheses:
 The start condition should set i to the length of the array.
 The stop condition should end when i is 0.
 The iterator should subtract 1 each time, which is done with i--.
+*/
+
+
+var myPlaces = ['Sweden', 'Thailand', 'Japan'];
+var friendPlaces = ['Denmark', 'Japan', 'Iceland'];
+
+for (var i = 0; i < myPlaces.length; i++) {
+  console.log(myPlaces[i]);
+
+  for (var j = 0; j < friendPlaces.length; j++) {
+    console.log(friendPlaces[j]);
+
+    if (myPlaces[i] === friendPlaces[j]) {
+      console.log('Match: ' + myPlaces[i]);
+    }
+  }
+}
+
+/* OUTPUT:
+Sweden
+Denmark
+Japan
+Iceland
+Thailand
+Denmark
+Japan
+Iceland
+Japan
+Denmark
+Japan
+Match: Japan
+Iceland
+*/
+
+var cards = ['Diamond', 'Spade', 'Heart', 'Club'];
+
+var currentCard = 'Heart';
+
+while (currentCard !== 'Spade') {
+  console.log(currentCard);
+
+  var randomNumber = Math.floor(Math.random() * 4);
+
+  currentCard = cards[randomNumber];
+}
+
+console.log('Found a Spade!');
+
+/*
+Awesome job! for loops are great, but they have a limitation: you have to know how many times you want the loop to run. What if you want a loop to run an unknown or variable number of times instead?
+
+For example, if we have a deck of cards and we want to flip cards (loop a card flipping function) until we get a 'Spade', how could we write that in JavaScript?
+
+That's the purpose of the while loop. It looks like similar to a for loop. Check it out:
+
+while (condition) {
+  // code block that loops until condition is false
+}
+The loop begins with the keyword while
+Inside the parentheses, we can insert a condition. As long as the variable evaluates to true the block of code will loop.
+Inside the code block we can write any code we'd like to loop.
 */
