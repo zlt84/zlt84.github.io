@@ -6,20 +6,34 @@
 
 p,
 ul,
-body {
+body,
+.car,
+.fulBio,
+.fulCar {
   margin: 0;
 }
 
 li {
   margin: 0 0 0 15px;
 }
+
+.bio,
 .main,
 .menu,
 .bioText,
 .fulBio,
-.fulCar {
-  width: auto;
+.fulCar,
+.car {
   height: auto;
+}
+
+.main,
+.menu,
+.bioText,
+.fulBio,
+.fulCar,
+.car {
+  width: auto;
 }
 
 .fulCar,
@@ -32,6 +46,24 @@ li {
   color: white;
 }
 
+.titles,
+.fulBio,
+.fulCar {
+  padding: 0;
+}
+
+.bio,
+.main,
+.car {
+position: relative;
+}
+
+.fulBio,
+.fulCar,
+.buakaw {
+position: absolute;
+}
+
 .main {
   background-image: url(../images/20170208/patternAlap.jpg);
   background-repeat: repeat;
@@ -40,20 +72,13 @@ li {
   background-position: center;
   min-width: 400px;
   max-width: 1920px;
-  position: relative;
   padding: 50px 0;
-}
-
-.menu {
-  position: absolute;
 }
 
 .bio {
   background: linear-gradient(90deg, rgba(255, 150, 25, .5), rgba(255, 100, 25, .5));
-  position: relative;
   padding: 10px 50px 10px 10px;
   width: 400px;
-  height: auto;
   max-height: 1000px;
   margin: 0 0 50px 0;
   border-radius: 0 15px 15px 0;
@@ -61,6 +86,7 @@ li {
   left: -415px;
   transition: background 1s linear, left 1s linear;
   z-index: 1;
+  border: 0.5px solid white;
 }
 
 .bio:hover {
@@ -73,10 +99,7 @@ li {
   font-weight: 800;
   font-size: 24px;
   line-height: normal;
-  padding: 0;
   transform: rotate(90deg);
-  margin: auto;
-  position: absolute;
 }
 
 .fulBio {
@@ -93,14 +116,11 @@ li {
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
-  margin: auto;
-  position: relative;
 }
 
 .titles {
   font-size: 12px;
   line-height: 15px;
-  padding: 0;
   list-style: circle inside;
 }
 
@@ -110,11 +130,7 @@ li {
 }
 
 .car {
-  width: auto;
-  height: auto;
   font-weight: 400;
-  margin: auto;
-  position: relative;
 }
 
 .buakaw {
@@ -128,7 +144,6 @@ li {
   background-attachment: fixed;
   background-position: bottom right;
   min-height: 400px;
-  position: absolute;
   bottom: 0px;
   right: 0px;
 }
