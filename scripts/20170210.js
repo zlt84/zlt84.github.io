@@ -28,3 +28,43 @@ if ('myName'.length >= 15 ) {
 else {
     console.log('You have a short name!');
 }
+
+
+if ('Wanderer'.length === 11) {
+    console.log('The condition is true')
+}
+else {
+    console.log('The condition is false')
+}
+
+
+if ("Jon".length * 2 / (2+1) === 2)
+{
+    console.log("The answer makes sense!");
+}
+else {
+    console.log('Error Error Error');
+}
+
+
+if(9 % 3 === 0 ) {
+    console.log("The first number is even");
+} else {
+    console.log("The first number is odd");
+}
+
+
+console.log('January'.substring(0, 3));             //Jan
+console.log('Melbourne is great'.substring(0, 12)); //Melbourne is
+console.log('Hamburgers'.substring(3, 10));         //burgers
+
+
+// On line 2, declare a variable myName and give it your name.
+var myName = 'Zsolt Kátai'
+// On line 4, use console.log to print out the myName variable.
+console.log(myName)
+// On line 7, change the value of myName to be just the first 2
+// letters of your name.
+myAge = 'Zs'
+// On line 9, use console.log to print out the myName variable.
+console.log(myAge)
