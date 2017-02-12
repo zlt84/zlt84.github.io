@@ -1,4 +1,3 @@
-
 var text = "Blah blah blah blah blah blah Eric \
 blah blah blah Eric blah blah Eric blah blah \
 blah blah blah blah blah Eric";
@@ -91,8 +90,8 @@ var stringvar = '30 angry icebear.'
 var stringvar2 = 'angry icebears'
 var numvar = parseInt(stringvar)
 var numvar2 = parseInt(stringvar2)
-console.log(numvar)                 // 30
-console.log(numvar2)                // NaN
+console.log(numvar) // 30
+console.log(numvar2) // NaN
 
 
 var test1 = 'This is a test.'
@@ -110,29 +109,29 @@ console.log(loc2)
 
 
 var abece = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-console.log(abece.substring (6, 7)) // G
-console.log(abece.substring (0, 4)) // ABCD
-console.log(abece.substring (6, 6)) // null
+console.log(abece.substring(6, 7)) // G
+console.log(abece.substring(0, 4)) // ABCD
+console.log(abece.substring(6, 6)) // null
 
-console.log(abece.charAt(0))        // A
-console.log(abece.charAt(12))       // M
+console.log(abece.charAt(0)) // A
+console.log(abece.charAt(12)) // M
 
 
 var pontok = [39, 40, 100, 49]
-console.log(pontok.length)          // 4
-console.log(pontok[1])              // 40
+console.log(pontok.length) // 4
+console.log(pontok[1]) // 40
 
 
 var nevek = ['Szabó Béla', 'Kovács István']
-console.log(nevek[0].substring(0, 5));        // a nevek tömb első részéből, az első 5 karakter. = Szabó
+console.log(nevek[0].substring(0, 5)); // a nevek tömb első részéből, az első 5 karakter. = Szabó
 
 
 var vagas = 'Kovács P. István'
-var vagasReszekre = vagas.split(' ')          // szétszedi a változót. Minden szóköznél, és létrehoz egy tömböt.
+var vagasReszekre = vagas.split(' ') // szétszedi a változót. Minden szóköznél, és létrehoz egy tömböt.
 console.log(vagasReszekre)
 console.log(vagasReszekre[1])
 
-var teljesnev = vagasReszekre.join(' ')       // újra egy változóba rakja a kért tömböt. Szóközök kerülnek a tömb részei közé.
+var teljesnev = vagasReszekre.join(' ') // újra egy változóba rakja a kért tömböt. Szóközök kerülnek a tömb részei közé.
 console.log(teljesnev)
 
 
@@ -141,6 +140,7 @@ function vizsgalat(a, b) {
 }
 
 var szamok = [30, 10, 200, 4]
+console.log(szamok)
+
 var rendezett = szamok.sort(vizsgalat)
 console.log(rendezett)
-console.log(szamok.sort())
