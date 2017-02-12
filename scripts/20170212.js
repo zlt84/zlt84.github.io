@@ -103,6 +103,11 @@ console.log(both)
 console.log(test1.toLowerCase())
 console.log(test1.toUpperCase())
 
+var loc = both.indexOf('only')
+var loc2 = both.indexOf('only', 5) // az only-t keresi, a both karakterlánc 6. karakterétől.
+console.log(loc)
+console.log(loc2)
+
 
 var abece = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 console.log(abece.substring (6, 7)) // G
@@ -113,7 +118,29 @@ console.log(abece.charAt(0))        // A
 console.log(abece.charAt(12))       // M
 
 
+var pontok = [39, 40, 100, 49]
+console.log(pontok.length)          // 4
+console.log(pontok[1])              // 40
 
 
+var nevek = ['Szabó Béla', 'Kovács István']
+console.log(nevek[0].substring(0, 5));        // a nevek tömb első részéből, az első 5 karakter. = Szabó
 
 
+var vagas = 'Kovács P. István'
+var vagasReszekre = vagas.split(' ')          // szétszedi a változót. Minden szóköznél, és létrehoz egy tömböt.
+console.log(vagasReszekre)
+console.log(vagasReszekre[1])
+
+var teljesnev = vagasReszekre.join(' ')       // újra egy változóba rakja a kért tömböt. Szóközök kerülnek a tömb részei közé.
+console.log(teljesnev)
+
+
+function vizsgalat(a, b) {
+  return a - b;
+}
+
+var szamok = [30, 10, 200, 4]
+var rendezett = szamok.sort(vizsgalat)
+console.log(rendezett)
+console.log(szamok.sort())
