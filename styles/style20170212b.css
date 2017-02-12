@@ -1,0 +1,65 @@
+/*
+* {
+border: 1px solid white;
+}
+*/
+
+body {
+  width: 100%;
+  height: auto;
+  background: url(../images/20170212/stone_block_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.kulsoDiv {
+  width: auto;
+  height: auto;
+  background-image: url(../images/20170212/qw_logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-width: 500px;
+  min-height: 800px;
+  margin: 0;
+  padding: 10px;
+}
+
+.belsoHeader {
+  width: auto;
+  height: 100px;
+  background-color: rgba(0, 0, 0, .5);
+  border-radius: 15px;
+  min-width: 480px;
+  margin-bottom: 15px;
+}
+
+.belsoDivBalra1,
+.belsoDivBalra2,
+.belsoDivJobbra1,
+.belsoDivJobbra2
+{
+  width: 20%;
+  height: auto;
+  min-width: 200px;
+  min-height: 300px;
+  opacity: 1;
+  border: 1px solid rgba(183, 56, 32, 1);
+  border-radius: 15px;
+  display: block;
+  position: relative;
+  margin-bottom: 15px;
+  background-color: rgba(255, 255, 255, .1);
+}
+
+.belsoDivBalra1,
+.belsoDivBalra2 {
+  float: left;
+  clear: left;
+}
+
+.belsoDivJobbra1,
+.belsoDivJobbra2 {
+  float: right;
+}
