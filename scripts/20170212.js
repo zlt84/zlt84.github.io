@@ -144,3 +144,63 @@ console.log(szamok)
 
 var rendezett = szamok.sort(vizsgalat)
 console.log(rendezett)
+
+
+var count = 0
+
+var loop = function () {
+  while (count < 3) {
+    console.log("I'm looping!");
+    count++;
+  }
+};
+
+loop();
+
+
+var favNumb = 14
+
+var soloLoop = function () {
+  while (favNumb <= 14) {
+    console.log("Looped once!");
+    favNumb++;
+  }
+};
+
+soloLoop();
+
+
+var magicNumb = 84
+
+var magicWhile = function () {
+  while (magicNumb <= 84) {
+    console.log("This is my while loop");
+    magicNumb++;
+  }
+}
+
+magicWhile()
+
+for (var i = 40; i >= 34; i--) {
+  console.log("This is my for loop")
+}
+
+
+// Sometimes you want to make sure your loop runs at least one time no matter what. When this is the case, you want a modified while loop called a do/while loop.
+// This loop says: "Hey! Do this thing one time, then check the condition to see if we should keep looping." After that, it's just like a normal while: the loop will continue so long as the condition being evaluated is true.
+
+var loopCondition = false;
+
+do {
+  console.log("I'm gonna stop looping 'cause my condition is " + loopCondition + "!");
+} while (loopCondition);
+
+
+var getToDaChoppa = function () {
+  // Write your do/while loop here!
+  var loopCondition = false;
+
+  do {
+    console.log("I'm gonna stop looping 'cause my condition is " + loopCondition + "!");
+  } while (loopCondition);
+}
