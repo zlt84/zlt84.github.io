@@ -37,7 +37,6 @@ switch (answer) {
     console.log("Choose a more popular map.;)")
 }
 
-
 // Complete lines 3 and 4!
 
 var iLoveJavaScript = true;
