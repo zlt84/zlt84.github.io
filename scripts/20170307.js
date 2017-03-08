@@ -131,5 +131,18 @@ function search(lastName) {
   }
 }
 
+
+function add(firstName, lastName, email, phoneNumber) {
+  this.firstName = firstName,
+    this.lastName = lastName,
+    this.email = email,
+    this.phoneNumber = phoneNumber
+
+  contacts[contacts.length] = this;
+};
+
+add("Zsolt", "Katai", "zsolt.katai84@gmail.com", "+36 30 2222 807");
+
+
 list();
 search();
