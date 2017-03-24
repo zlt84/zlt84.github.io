@@ -1,52 +1,23 @@
-var bob = {
-  firstName: "Bob",
-  lastName: "Jones",
-  phoneNumber: "(650) 777-7777",
-  email: "bob.jones@example.com"
-};
-
-var mary = {
-  firstName: "Mary",
-  lastName: "Johnson",
-  phoneNumber: "(650) 888-8888",
-  email: "mary.johnson@example.com"
-};
-
-var contacts = [bob, mary];
-
-function printPerson(person) {
-  console.log(person.firstName + " " + person.lastName);
-}
-
-function list() {
-  var contactsLength = contacts.length;
-  for (var i = 0; i < contactsLength; i++) {
-    printPerson(contacts[i]);
+function Person(job, married) {
+  this.job = job;
+  this.married = married;
+  // add a "speak" method to Person!
+  this.speak = function () {
+    console.log("Hello!");
   }
 }
 
-/*Create a search function
-then call it passing "Jones"*/
-function search(lastName) {
-  var contactsLength = contacts.length;
-  for (var i = 0; i < contactsLength; i++) {
-    if (contacts[i].lastName === "Jones") {
-      printPerson(contacts[i])
-    }
+var user = new Person("Codecademy Student", false);
+user.speak();
+
+
+var james = {
+  job: "programmer",
+  married: false,
+  speak: function (mood) {
+    console.log("Hello, I am feeling " + mood)
   }
-}
-
-
-function add(firstName, lastName, email, phoneNumber) {
-  this.firstName = firstName,
-    this.lastName = lastName,
-    this.email = email,
-    this.phoneNumber = phoneNumber
-
-  contacts[contacts.length] = this;
 };
 
-add("Zsolt", "Katai", "zsolt.katai84@gmail.com", "+36 30 2222 807");
-
-
-list();
+james.speak("great");
+james.speak("just okay");
