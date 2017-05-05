@@ -11,7 +11,15 @@ body {
   background-attachment: fixed;
   background-position: right bottom;
   margin: auto;
-  padding: 0
+  padding: 0;
+}
+
+.header {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0);
+  z-index: 1;
 }
 
 .main {
@@ -37,10 +45,20 @@ body {
   position: relative;
 }
 
+.menusor {
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin: auto;
+  text-align: center;
+  padding: 10px 0px;
+  background-color: white;
+}
+
 .menu {
   width: 60%;
   height: auto;
-  padding: 10px 10px;
+  padding: 125px 20px 20px 20px;
   background-color: rgba(255, 255, 255, .8);
   position: relative;
   margin: auto;
@@ -51,32 +69,44 @@ body {
   width: 15%;
   height: 100%;
   display: inline-block;
-  margin: 20px auto;
+  margin: 0px 10px;
   position: relative;
   font-family: Roboto;
   font-size: 1em;
   text-align: center;
   color: white;
   background-color: rgb(175, 175, 175);
-  transition: background-color 1s;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  transition: background-color 1s, border-left 1s, border-right 1s, color .5s;
   overflow-x: hidden;
-  min-width: 75px;
+  min-width: 80px;
   max-width: 120px;
 }
 
 .menuElement:hover {
-  background-color: rgb(100, 100, 100);
+  background-color: rgb(255, 255, 255);
+  border-left: 1px solid rgb(175, 175, 175);
+  border-right: 1px solid rgb(175, 175, 175);
+  color: rgb(175, 175, 175);
+}
+.menucimek {
+  margin: auto;
+  padding: 7.5px;
 }
 
 .fogalmak,
 .tetelek {
   margin: 0px 20px 20px 20px;
-  padding-top: 25px;
+  padding: 0;
   font-family: Roboto;
   font-size: .85em;
   color: rgb(100, 100, 100);
   text-align: left;
   line-height: 1.25em;
+}
+
+.tetelek {
   border-top: 1px solid rgb(100, 100, 100);
 }
 
