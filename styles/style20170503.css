@@ -1,13 +1,15 @@
-
+/*
 * {
   border: 1px solid red;
 }
-
+*/
 
 body {
   width: 100%;
   height: auto;
-  background-color: rgb(45, 45, 45);
+  background-image: url(../images/20170503/dietetika_bg.jpg);
+  background-attachment: fixed;
+  background-position: right bottom;
   margin: auto;
   padding: 0
 }
@@ -39,15 +41,48 @@ body {
   width: 60%;
   height: auto;
   padding: 10px 10px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, .8);
   position: relative;
   margin: auto;
+  text-align: center;
 }
 
 .menuElement {
   width: 15%;
   height: 100%;
   display: inline-block;
-  margin: auto;
+  margin: 20px auto;
   position: relative;
+  font-family: Roboto;
+  font-size: 1em;
+  text-align: center;
+  color: white;
+  background-color: rgb(175, 175, 175);
+  transition: background-color 1s;
+  overflow-x: hidden;
+  min-width: 75px;
+  max-width: 120px;
+}
+
+.menuElement:hover {
+  background-color: rgb(100, 100, 100);
+}
+
+.fogalmak,
+.tetelek {
+  margin: 0px 20px 20px 20px;
+  padding-top: 25px;
+  font-family: Roboto;
+  font-size: .85em;
+  color: rgb(100, 100, 100);
+  text-align: left;
+  line-height: 1.25em;
+  border-top: 1px solid rgb(100, 100, 100);
+}
+
+.tetelcim {
+  font-family: Roboto;
+  font-size: 1em;
+  font-weight: 700;
+  color: rgb(45, 45, 45);
 }
