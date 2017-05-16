@@ -1,8 +1,86 @@
 /*
-* {
+* {}
   border: 1px solid red;
+  vertical-align: middle;
 }
 */
-gerenatorButton {
-  border: solid black 1px;
+
+body,
+.main {
+  background-color: black
+}
+
+#generatorButton {
+  margin: auto;
+  padding: 10px 0px;
+  border: 1px solid wheat;
+  background-color: dimgrey;
+  color: white;
+  font-family: Verdana;
+  font-weight: 800;
+  text-align: center;
+  font-size: 16px;
+  line-height: 25px;
+  width: 30%;
+  min-width: 150px;
+  max-width: 200px;
+  height: auto;
+}
+
+#generatorButton,
+#teamRed,
+#teamBlue {
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+#teamRed,
+#teamBlue {
+  margin: 20px auto;
+  padding: 10px 0;
+  width: 130px;
+  height: auto;
+  font-family: Verdana;
+  font-size: 15px;
+  font-weight: 200;
+  text-align: center;
+  transition: font-size 1s, font-weight 1s, color 1s, transform 1s;
+}
+
+#teamRed {
+  color: rgb(255, 0, 0);
+  border: 1px solid rgb(255, 0, 0);
+  background-color: rgb(50, 0, 0);
+}
+
+#teamBlue {
+  color: rgb(0, 55, 255);
+  border: 1px solid rgb(0, 55, 255);
+  background-color: rgb(0, 0, 50);
+}
+
+#teamBlue:hover,
+#teamRed:hover {
+  font-size: 16px;
+  font-weight: 400;
+  transform: scale(1.1, 1.1);
+  color: white;
+}
+
+.main {
+  margin: auto;
+  padding: 20px;
+  width: auto;
+  height: auto;
+}
+
+.teams {
+  margin: auto;
+  padding: 0;
+  width: 30%;
+  min-width: 150px;
+  max-width: 200px;
+  height: auto;
+  border: 0px solid grey;
+  position: relative;
 }
