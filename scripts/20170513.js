@@ -14,10 +14,15 @@ function rpickup(players) {
   return obj
 }
 
+function renderTeam(id, team) {
+  var elem = document.getElementById(id);
+  elem.innerHTML = team[0] + '<br>' + team[1]
+}
+
 function generateTeams() {
   var teams = rpickup(players);
-  document.getElementById("teamRed").innerHTML = "ccs " + teams.teamA[0] + "<br>" + "ccs " + teams.teamA[1];
-  document.getElementById("teamBlue").innerHTML = "ccs " + teams.teamB[0] + "<br>" + "ccs " + teams.teamB[1];
+  renderTeam('teamRed', teams.teamA);
+  renderTeam('teamBlue', teams.teamB)
 }
 
 document.getElementById("generatorButton").addEventListener("click", generateTeams);
