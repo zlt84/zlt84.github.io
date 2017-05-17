@@ -14,23 +14,10 @@ function rpickup(players) {
   return obj
 }
 
-
-/*
-console.log(teamA)
-console.log(teamB)
-console.log(Object.keys(obj))
-console.log(obj.teamA)
-console.log(obj.teamB)
-*/
-
-
 function generateTeams() {
   var teams = rpickup(players);
-  document.getElementById("generatorButton").innerHTML = "RPICKUP<br>AGAIN";
   document.getElementById("teamRed").innerHTML = "ccs " + teams.teamA[0] + "<br>" + "ccs " + teams.teamA[1];
   document.getElementById("teamBlue").innerHTML = "ccs " + teams.teamB[0] + "<br>" + "ccs " + teams.teamB[1];
-  console.log(teams.teamA)
-  console.log(teams.teamB)
 }
 
 document.getElementById("generatorButton").addEventListener("click", generateTeams);
