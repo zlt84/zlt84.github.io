@@ -1,45 +1,55 @@
 "use strict";
-var playerCount = document.getElementById("playerCountSelector");
-var playerCountFinal = playerCount.value;
 
 function rpickup(players) {
-  console.log(playerCountFinal);
 
   var playersMod = players.slice();
   playersMod = shuffle(playersMod);
-  console.log(playersMod);
+
+  var playerCount = document.getElementById("playerCountSelector");
+  var playerCountFinal = playerCount.value;
+  console.log(playerCount.value);
+  console.log(playerCountFinal);
 
   if (playerCountFinal == "2") {
     var teamA = [playersMod[0], playersMod[2]];
     var teamB = [playersMod[1], playersMod[3]];
+    console.log(playersMod)
 
     var obj = {
       teamA: teamA,
       teamB: teamB
     };
 
-    return obj
+    console.log(obj.teamA)
+    console.log(obj.teamB)
+    return obj;
 
   } else if (playerCountFinal == "3") {
     var teamA = [playersMod[0], playersMod[2], playersMod[4]];
     var teamB = [playersMod[1], playersMod[3], playersMod[5]];
+    console.log(playersMod)
 
     var obj = {
       teamA: teamA,
       teamB: teamB
     };
 
+    console.log(obj.teamA)
+    console.log(obj.teamB)
     return obj
 
   } else {
     var teamA = [playersMod[0], playersMod[2], playersMod[4], playersMod[6]];
     var teamB = [playersMod[1], playersMod[3], playersMod[5], playersMod[7]];
+    console.log(playersMod)
 
     var obj = {
       teamA: teamA,
       teamB: teamB
     };
 
+    console.log(obj.teamA)
+    console.log(obj.teamB)
     return obj
   }
 }
@@ -47,10 +57,10 @@ function rpickup(players) {
 function renderTeam(id, team) {
   var html = " "
   for (var i = 0; i < team.length; i++) {
-    html += team[i].clan, team[i].name
+    html += team[i].clan + " " + team[i].name + "<br>"
   }
   var elem = document.getElementById(id);
-  elem.innerHTML = team[0] + '<br>' + team[1]
+  elem.innerHTML = html
 }
 
 function generateTeams() {
