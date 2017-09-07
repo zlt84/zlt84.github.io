@@ -1,5 +1,5 @@
 * {
-  /*
+/*
   border: 1px solid red;
 */
   margin: auto;
@@ -18,6 +18,8 @@ body {
   top: 0px;
   padding: 25px 0px 0px 0px;
   height: 100%;
+  width: 100%;
+  overflow-x: scroll;
 }
 
 .uprow {
@@ -41,25 +43,57 @@ body {
 }
 
 .kozcim {
+  margin: 25px 0px 5px 0px;
   font-family: Lobster;
-  font-size: 22px;
-  line-height: 30px;
+  font-size: 26px;
+  line-height: 36px;
+  text-align: center;
+  color: white;
 }
 
 .bg {
-  padding: 0px;
+  margin: auto;
   width: 80%;
+  padding: 0px;
   height: auto;
 }
 
 .text {
-  border: 1px solid rgba(255,255,255, .25);
+  border: 1px solid rgba(255,255,255,.25);
   border-radius: 12px;
-  margin: 25px 0px;
-  padding: 5px;
+  margin: 0px 0px 25px 0px;
+  background-color: rgba(255,255,255,.2);
+  height: auto;
+  display: inline-block;
+  padding: 10px;
+}
+
+.defimg_fekvo {
+  width: 100%;
+  max-width: 480px;
+  float: left;
+  border-radius: 12px;
+  margin: 0px 10px 10px 0px;
+  transition: box-shadow 1s;
+}
+
+.defimg_allo {
+  width: 100%;
+  max-width: 240px;
+  float: right;
+  border-radius: 12px;
+  margin: 0px 0px 10px 10px;
+  transition: box-shadow 1s;
+}
+
+.defimg_fekvo:hover,
+.defimg_allo:hover {
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, .45);
+}
+
+.leiras {
   font-family: Roboto Slab;
   font-size: 14px;
   line-height: 20px;
   color: white;
-  background-color: rgba(255, 255, 255, .2);
 }
