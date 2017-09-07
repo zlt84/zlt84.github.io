@@ -21,6 +21,8 @@ body {
 }
 
 .uprow {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
   background-color: rgba(255, 255, 255, .15);
   width: 100%;
   height: auto;
@@ -51,6 +53,8 @@ body {
 }
 
 .text {
+  border: 1px solid rgba(255,255,255, .25);
+  border-radius: 12px;
   margin: 25px 0px;
   padding: 5px;
   font-family: Roboto Slab;
