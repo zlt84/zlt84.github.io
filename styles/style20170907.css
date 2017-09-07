@@ -1,0 +1,52 @@
+* {
+/*
+  border: 1px solid red;
+*/
+  margin: auto;
+  padding: 0px;
+}
+
+body {
+  background-color: #4B2C20;
+}
+.whole {
+  background-image: url(../images/20170907/oko-vegan%20logo-negativ-korbeneltart-op10.png);
+  background-repeat: repeat;
+  background-size: contain;
+  position: fixed;
+  top: 0px;
+  padding: 25px 0px 0px 0px;
+  height: 100%;
+}
+
+.uprow {
+  background-color: rgba(255, 255, 255, .15);
+  width: 100%;
+  height: auto;
+  margin: auto;
+  padding: 0px 0px;
+  text-align: center;
+}
+
+.menusor {
+  font-family: Roboto;
+  color: white;
+  margin: 10px;
+  font-size: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.bg {
+  padding: 0px;
+  width: 80%;
+  height: auto;
+}
+.text {
+  margin: 25px 0px;
+  padding: 5px;
+  font-family: Roboto;
+  font-size: 14px;
+  color: white;
+  background-color: rgba(255,255,255,.2);
+}

@@ -1,9 +1,9 @@
-/*
-* {}
+
+* {
   border: 1px solid red;
   vertical-align: middle;
 }
-*/
+
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -33,6 +33,13 @@ header nav {
 header p {
   padding: 0 20px;
   margin: 0;
+}
+
+.logo {
+  background-image: url(../images/20170711/oko-vegan%20logo.png);
+  background-size: cover;
+  width: 200 px;
+  height: 40 px;
 }
 
 .jumbotron {
