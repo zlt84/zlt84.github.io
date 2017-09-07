@@ -1,5 +1,5 @@
 * {
-/*
+  /*
   border: 1px solid red;
 */
   margin: auto;
@@ -35,11 +35,17 @@ body {
 
 .menusor {
   font-family: Lobster;
-  color: white;
+  color: rgba(255, 255, 255, .75);
   margin: 10px;
   font-size: 32px;
   position: relative;
   display: inline-block;
+  transition: 1s;
+}
+
+.menusor:hover {
+  color: rgba(255, 255, 255, 1);
+  font-size: 36px;
 }
 
 .kozcim {
@@ -59,10 +65,10 @@ body {
 }
 
 .text {
-  border: 1px solid rgba(255,255,255,.25);
+  border: 1px solid rgba(255, 255, 255, .25);
   border-radius: 12px;
   margin: 0px 0px 25px 0px;
-  background-color: rgba(255,255,255,.2);
+  background-color: rgba(255, 255, 255, .2);
   height: auto;
   display: inline-block;
   padding: 10px;
