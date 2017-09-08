@@ -16,7 +16,7 @@ body {
   background-size: contain;
   position: fixed;
   top: 0px;
-  padding: 25px 0px 0px 0px;
+  padding: 25px 0px 25px 0px;
   height: 100%;
   width: 100%;
   overflow-x: scroll;
@@ -25,19 +25,20 @@ body {
 .uprow {
   border-top: 1px solid white;
   border-bottom: 1px solid white;
-  background-color: rgba(255, 255, 255, .15);
+  background-color: rgba(100, 75, 65, .75);
   width: 100%;
   height: auto;
   margin: auto;
   padding: 0px 0px;
   text-align: center;
+  position: fixed;
 }
 
 .menusor {
   font-family: Lobster;
-  color: rgba(255, 255, 255, .75);
+  color: rgba(205, 205, 205, 1);
   margin: 10px;
-  font-size: 32px;
+  font-size: 30px;
   position: relative;
   display: inline-block;
   transition: 1s;
@@ -45,7 +46,6 @@ body {
 
 .menusor:hover {
   color: rgba(255, 255, 255, 1);
-  font-size: 36px;
 }
 
 .kozcim {
@@ -60,7 +60,7 @@ body {
 .bg {
   margin: auto;
   width: 80%;
-  padding: 0px;
+  padding: 90px 0px 0px 0px;
   height: auto;
 }
 
@@ -94,12 +94,47 @@ body {
 
 .defimg_fekvo:hover,
 .defimg_allo:hover {
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, .45);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, .45);
 }
 
 .leiras {
   font-family: Roboto Slab;
   font-size: 14px;
   line-height: 20px;
+  color: white;
+}
+
+.koz {
+  height: 50px;
+  width: 100%;
+}
+
+.footer {
+  width: 100%;
+  height: 10px;
+  margin: 0px;
+  padding: 10px 50px;
+  background-color: rgba(100, 75, 65, 1);
+  position: fixed;
+  bottom: 0px;
+}
+
+.labj {
+  margin: 0px;
+  padding: 0px;
+  width: 150px;
+  float: right;
+}
+
+.labjtext {
+  font-family: Roboto Slab;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: left;
+  color: rgba(75, 44, 32, 1);
+  transition: 3s;
+}
+
+.labjtext:hover {
   color: white;
 }
