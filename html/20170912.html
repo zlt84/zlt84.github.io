@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>SyncFiddle</title>
+  <style>
+    body {
+      font-family: "Helvetica Neue", Helvetica, sans-serif;
+    }
+
+  </style>
+</head>
+
+<body>
+  <h1>Welcome to SyncFiddle</h1>
+  <p>
+    Collaborate your HTML, CSS and JavaScript code with multiple users.
+    <br> You can share code online with instant real-time SyncFiddle code editor.
+  </p>
+  <p>
+    Push <strong>Run</strong> button to render HTML/CSS and execute script.
+  </p>
+
+  <script>
+    var s = ''; // üres, karakter típusú változó
+    for (i = 1; i <= 100; ++i) {
+      s += '<tr><td>' + i + '</td><td>' + i * i + '</td><td>' + Math.sqrt(i) + '</td></tr>';
+    }
+
+    document.write('<table border="1px">', s, '<table>');
+
+
+    /*
+        Elől tesztelő
+
+        var n // a változónak VAN értéke és az szám típusú
+        while (!isFinite(n)) { // addig ismétlődjön a ciklus, amíg "n" nem szám típusú
+          n = prompt('Kérek egy számot', '0');
+        }
+
+        document.write('A megadott szám=', n);
+    */
+
+    // HÁTUL TESZTELŐ
+
+    var n = 42; // a változónak VAN értéke és az szám típusú
+    do { // ciklus kezdete. Nincs feltétel.
+      n = prompt('Kérek egy számot', '0');
+    } while (!isFinite(n)); // a végén értékel, hogy kell-e ismételnie
+
+    document.write('A megadott szám=', n);
+
+
+    /*  A GÉP GONDOLT EGY SZÁMRA, TALÁLD KI:)
+
+        var n2 = Math.floor(Math.random() * 100) + 1;
+        var tipp = 0;
+        var szoveg = 'Gondoltam egy számot. Tipp?';
+        do {
+          tipp = prompt(szoveg, tipp);
+          if (tipp > n2) {
+            szoveg = 'Kisebb!';
+          }
+          if (tipp < n2) {
+            szoveg = 'Nagyobb';
+          }
+        } while (n2 != tipp);
+        document.write('<br>' + 'Gratula!....');
+    */
+
+    // Listázzuk ki 2… 1000 intervallumban az összes prímszámot.
+
+    for (n = 2; n <= 1000; ++n) {
+      var veg = Math.floor(Math.sqrt(n)); // szám felének egészrésze
+      var prim_e = true;
+      var i = 2;
+      while (i <= veg && prim_e) { // futás "vég"-ig, vagy amíg nincs osztó
+        if (n % i == 0) {
+          prim_e = false;
+        } // talált osztót
+        ++i; // következő osztó
+      }
+      if (prim_e) {
+        document.write(n, ', ');
+      }
+    }
+
+    function ir(s) { // eljárás neve, paraméter
+      document.write(s, '<br>');
+    }
+
+    function negyzet(a) { // a függvény neve, formális paraméter
+      var i = a * a; // lokális változó
+      return i; // függvény visszatérési értéke
+    }
+    var i = negyzet(2); // függvény hívása, aktuális paraméter
+    ir(i);
+    ir(negyzet(negyzet(negyzet(i)))); // Melyik számot fogja kiírni?
+
+    document.write(i, '<br>')
+
+    const names = ['Wes', 'Kait', 'Lux'];
+
+    const fullNames2 = names.map((name) => {
+      return `${name} Bos`;
+    });
+
+    console.log(fullNames2);
+
+  </script>
+
+</body>
+
+</html>
